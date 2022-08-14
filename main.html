@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senhas</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <h1> Gerador de Senhas </h1>
+        <div class="senha">
+            <div class="numsenha"></div>
+            <button id="btncopiar" onclick="copiaSenha()"><i class="bx bx-copy-alt"></i></button>
+        </div>
+        <div class="seletores">
+            <label for="qtdcaracteres" id="tamanho"></label>
+            <input type="range" id="qtdcaracteres" name="qtdcaracteres" min="5" max="25" value="5">
+            <div class="opcoes">
+                <label for="upperCase" class="abas">Letras Maiúsculas</label>
+                <input type="checkbox" class="caixas" id="upperCase" name="upperCase" checked onclick="verifica()">
+            </div>
+            <div class="opcoes">
+                <label for="lowerCase" class="abas">Letras Minúsculas</label>
+                <input type="checkbox" class="caixas" id="lowerCase" name="lowerCase" onclick="verifica()">
+            </div>
+            <div class="opcoes">
+                <label for="numeros" class="abas">Números</label>
+                <input type="checkbox" class="caixas" id="numeros" name="numeros" onclick="verifica()">
+            </div>
+            <div class="opcoes">
+                <label for="simbolos" class="abas">Símbolos</label>
+                <input type="checkbox" class="caixas" id="simbolos" name="simbolos" onclick="verifica()">
+            </div>
+        </div>
+        <button id="btngerar" onclick="gerarSenha()">Gerar</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: linear-gradient(to top right, black, rgb(109, 21, 21));
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: rgba(54, 54, 54, 0.713);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    min-height: 330px;
+    padding: 0.7em;
+    border: 1px solid;
+    border-color: rgb(0, 102, 255);
+    border-radius: 5px;
+}
+
+.seletores {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    margin: 6px 0px 8px;
+    padding: 10px;
+}
+
+
+h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.senha {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.301);
+    color: white;
+    padding: 0.3em;
+    min-height: 50px;
+    /*max-height: 50px;*/
+    border: none;
+    border-radius: 5px;
+}
+
+.numsenha {
+    position: absolute;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    height: 80%;
+    top: 5px;
+    font-size: 17px;
+    user-select: none;
+}
+
+#qtdcaracteres {
+    width: 100%;
+    padding: 3px 0px 3px;
+    margin: 10px 0 15px;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 5px;
+    outline: none;
+    opacity: 1;
+    border-radius: 5px;
+}
+
+#qtdcaracteres::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    background: rgb(0, 102, 255);
+    border-radius: 50%;
+}
+
+.opcoes {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 8px 8px;
+}
+
+.caixas{
+    cursor: pointer;
+}
+
+
+#btncopiar {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 40px;
+    height: 42px;
+    margin: 4px;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    padding-top: 5px;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: black;
+    cursor: pointer;
+}
+
+#btncopiar:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: white;
+}
+
+#btncopiar:disabled {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: rgba(255, 255, 255, 0.4);
+    cursor: auto;
+}
+
+#btngerar {
+    font-size: 20px;
+    padding: 0.3em;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(4, 164, 4);
+    color: white;
+    cursor: pointer;
+}
+
+#btngerar:hover {
+    background-color:rgba(4, 164, 4, 0.729);
+}
+
+#btngerar:disabled {
+    background-color:rgb(16, 87, 16);
+    color: rgb(173, 173, 173);
+    cursor:auto;
+}
